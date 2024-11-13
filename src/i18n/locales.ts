@@ -1,12 +1,16 @@
 export const locales = [
 	"en", // English (default locale)
 	"pt", // Portuguese
-	"fr", // French
-	"es", // Espanish
-	"dt", // German
-	"it", // Italian
-	"nl", // Dutch
-	"jp", // Japanese
+	// "fr", // French
+	// "es", // Spanish
+	// "de", // German
+	// "it", // Italian
+	// "nl", // Dutch
+	// "sv", // Swedish
+	// "el", // Greek
+	// "ru", // Russian
+	// "ko", // Korean
+	// "ja", // Japanese
 ] as const;
 
 export type Locale = (typeof locales)[number];
