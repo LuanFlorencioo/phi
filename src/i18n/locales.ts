@@ -1,5 +1,5 @@
-export const LOCALES = [
-	"en", // English
+export const locales = [
+	"en", // English (default locale)
 	"pt", // Portuguese
 	"fr", // French
 	"es", // Espanish
@@ -9,6 +9,6 @@ export const LOCALES = [
 	"jp", // Japanese
 ] as const;
 
-export type Locale = (typeof LOCALES)[number];
+export type Locale = (typeof locales)[number];
 
-export const LOCALE_DEFAULT: Locale = "en";
+export const defaultLocale: Locale = "en";
