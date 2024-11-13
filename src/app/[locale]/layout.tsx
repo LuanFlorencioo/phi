@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { fonts } from "@/fonts";
-import { isLocaleSupported } from "@/utils/is-locale-supported";
+import { isSupportedLocale } from "@/utils/is-supported-locale";
 import { ThemeProvider } from "next-themes";
 import "./../globals.css";
 
@@ -18,7 +18,7 @@ export default async function RootLayout({
 	children: React.ReactNode;
 	params: { locale: string };
 }) {
-	if (!isLocaleSupported(locale)) notFound();
+	if (!isSupportedLocale(locale)) notFound();
 
 	return (
 		<html lang={locale} suppressHydrationWarning>
